@@ -196,7 +196,7 @@ class Task(ILovePdf):
 
     def clean_filename(self, filename):
 
-        return "_".join(filename.split('_')[1:])
+        return "_".join(filename.split('_')[:-1])
 
     def download(self):
 
